@@ -14,7 +14,7 @@ class Clingon < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/con-dog/clingon/releases/download/v0.1.0/clingon_0.1.0_darwin_amd64.tar.gz"
-    sha256 "ddfc54bd98b3737dae9bcfaf8b20deebce71dbee2f523733a9ac14cc38bd628d"
+    sha256 "abe04287f2bb73257fadff3260b97ef52e133078076e21bd79077859773bd4b8"
 
     define_method(:install) do
       bin.install "clingon"
@@ -23,7 +23,7 @@ class Clingon < Formula
   end
   if Hardware::CPU.arm?
     url "https://github.com/con-dog/clingon/releases/download/v0.1.0/clingon_0.1.0_darwin_arm64.tar.gz"
-    sha256 "017d8300a3ab9e0b3708fe282304f62839c33e9cb526f93fe298dad8f94a8b01"
+    sha256 "4e0c50743769f281aef1ce55c3ea30bbd5c5c6aa57de9530179823f1d3c1c82e"
 
     define_method(:install) do
       bin.install "clingon"
