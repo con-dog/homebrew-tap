@@ -5,7 +5,7 @@
 class Clingon < Formula
   desc "Menu of the commands you can never remember, next to a real shell"
   homepage "https://github.com/con-dog/clingon"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   depends_on "micro"
@@ -13,8 +13,8 @@ class Clingon < Formula
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/con-dog/clingon/releases/download/v0.1.1/clingon_0.1.1_darwin_amd64.tar.gz"
-    sha256 "43b2b4c253d4086f9b667ce8e007756b8bc8452ad776b9897bf15b8465c5dceb"
+    url "https://github.com/con-dog/clingon/releases/download/v0.2.0/clingon_0.2.0_darwin_amd64.tar.gz"
+    sha256 "52363abbeb36b5df269e1062354421c7723c963275ca157396a9985d8110c7ec"
 
     define_method(:install) do
       bin.install "clingon"
@@ -22,8 +22,8 @@ class Clingon < Formula
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/con-dog/clingon/releases/download/v0.1.1/clingon_0.1.1_darwin_arm64.tar.gz"
-    sha256 "a9395a7c47cebef663075e2a8b29030d0a35bd4feafb48215b7dc174bf172d86"
+    url "https://github.com/con-dog/clingon/releases/download/v0.2.0/clingon_0.2.0_darwin_arm64.tar.gz"
+    sha256 "d0fa0ee575362b046f518081a59719d02eae925914de293a59e463c77f4205c3"
 
     define_method(:install) do
       bin.install "clingon"
